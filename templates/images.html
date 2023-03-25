@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Technology Headlines with Thumbnails</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, {{name}}!</h1>
+    <h2>Top Technology News Today:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Thumbnail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for headline in headlines_with_links_and_thumbnails %}
+                <tr>
+                    <td>
+                        <a href="{{ headline.url }}">{{ headline.title }}</a>
+                    </td>
+                    <td>
+                        <img src="{{ headline.thumbnail }}" alt="{{ headline.title }} thumbnail" width="150">
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
