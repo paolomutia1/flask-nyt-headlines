@@ -13,7 +13,7 @@ This Flask application displays the top 5 technology headlines from the New York
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/yourusername/top-tech-headlines.git
+git clone https://github.com/paolomutia1/flask-nyt-headlines.git
 
 2. Change directory into the project folder:
 
